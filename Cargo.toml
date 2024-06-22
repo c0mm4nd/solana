@@ -184,7 +184,6 @@ criterion-stats = "0.3.0"
 crossbeam-channel = "0.5.12"
 csv = "1.3.0"
 ctrlc = "3.4.2"
-curve25519-dalek = "3.2.1"
 dashmap = "5.5.3"
 derivation-path = { version = "0.2.0", default-features = false }
 derivative = "2.2.0"
@@ -540,6 +539,10 @@ rev = "6105d7a5591aefa646a95d12b5e8d3f55a9214ef"
 #
 # https://github.com/dalek-cryptography/curve25519-dalek/compare/3.2.1...solana-labs:curve25519-dalek:3.2.1-unpin-zeroize
 #
+[workspace.dependencies.curve25519-dalek]
+git = "https://github.com/solana-labs/curve25519-dalek.git"
+rev = "b500cdc2a920cd5bff9e2dd974d7b97349d61464"
+
 [patch.crates-io.curve25519-dalek]
 git = "https://github.com/solana-labs/curve25519-dalek.git"
 rev = "b500cdc2a920cd5bff9e2dd974d7b97349d61464"
